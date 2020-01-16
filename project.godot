@@ -26,7 +26,6 @@ window/size/height=1080
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
 quality/filters/msaa=2

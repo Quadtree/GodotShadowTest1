@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Meshes/box.glb" type="PackedScene" id=1]
+[ext_resource path="res://Meshes/spinner.gd" type="Script" id=2]
 
 [node name="Spatial" type="Spatial"]
 
@@ -8,12 +9,13 @@
 transform = Transform( 3.42832, 0, 0, 0, 0.0824504, 0, 0, 0, 3.42832, 0, 0, 0 )
 
 [node name="box2" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34304, 1.08245, -0.988259 )
-
-[node name="OmniLight" type="OmniLight" parent="box2"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.16786, 1.24029, 2.58399 )
-shadow_enabled = true
-shadow_reverse_cull_face = true
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.67282, 1.08245, -0.988259 )
+script = ExtResource( 2 )
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.951739, 0.306908, 0, -0.306908, 0.951739, -1.88693, 2.60724, 4.91435 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50496, 2.32274, 1.59573 )
+shadow_enabled = true
+shadow_reverse_cull_face = true
